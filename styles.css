@@ -24,7 +24,8 @@ header {
 }
 
 .container {
-    padding: 11px 3.5vw;;
+    padding: 11px 3.5vw;
+    ;
 }
 
 nav {
@@ -35,6 +36,27 @@ nav {
 nav ul li {
     list-style: none;
     padding: 0 18px;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 18px;
+}
+
+@media only screen and (max-width:650px) {
+
+    /* For mobile phones: */
+    nav ul li {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:650px) {
+
+    /* For mobile phones: */
+    .logoImg {
+        display: none;
+    }
 }
 
 .right {
@@ -50,6 +72,14 @@ nav ul li {
     margin: 0 8px 0 0px;
 }
 
+@media only screen and (max-width:650px) {
+
+    /* For mobile phones: */
+    .search {
+        display: none;
+    }
+}
+
 .bannerImg {
     width: 90.7vw;
     margin: 23px 9.7px;
@@ -63,6 +93,18 @@ nav ul li {
     width: 9.8vw;
 }
 
+.iconImg {
+    width: 9.8vw;
+}
+
+@media only screen and (max-width:650px) {
+
+    /* For mobile phones: */
+    .iconImg {
+        width: 150px;
+    }
+}
+
 .tall {
     min-height: 40vh;
 }
@@ -71,4 +113,19 @@ footer {
     padding: 23px;
     text-align: center;
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+.opIcon {
+    display: none;
+}
+
+@media only screen and (max-width:650px) {
+
+    /* For mobile phones: */
+    .opIcon {
+        padding-top: 8px;
+        display: inline;
+        width: 23px;
+        height: 23px;
+    }
 }
